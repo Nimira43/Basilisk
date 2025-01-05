@@ -18,7 +18,7 @@ io.on('connection', (socket)=> {
   console.log('A user has been connected')
   socket.emit('messageFromServer', 'Hello User - This is the Server')
   socket.on('messageFromClient', (message) => {
-    console.log('Received message from Client')
+    console.log('Received message from Client:', message)
   })
 })
 
