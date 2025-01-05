@@ -7,6 +7,8 @@ const server = createServer(app)
 const io = new Server(server)
 const PORT = process.env.PORT || 3000
 
+app.get.get('/', (req))
+
 io.on('connection', (socket)=> {
   console.log(socket)
   console.log('A user has been connected')
