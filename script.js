@@ -8,6 +8,11 @@ const app = Vue.createApp({
   methods: {
     attackBasilisk() {
       const attackValue = Math.floor(Math.random() * (60 - 25)) + 25
+      this.basiliskHealth -= attackValue
+    },
+    attackPlayer() {
+      const attackValue = Math.floor(Math.random() * (30 - 12)) + 12
+      this.playerHealth -= attackValue
     }
   }
 })
