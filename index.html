@@ -18,17 +18,29 @@
     <section id="basilisk" class="container">
       <h2>Basilisk</h2>
       <div class="health-bar">
-        <div class="health-bar-value"></div>
+        <div 
+          class="health-bar-value"
+          :style="{
+            width: basiliskHealth + '%'
+          }"        
+        >
+        </div>
       </div>
     </section>
     <section id="player" class="container">
       <h2>You</h2>
       <div class="health-bar">
-        <div class="health-bar-value"></div>
+        <div 
+          class="health-bar-value"
+          :style="{
+            width: playerHealth + '%'
+          }" 
+        >     
+        </div>
       </div>
     </section>
     <section id="controls">
-      <button>Attack</button>
+      <button @click="attackBasilisk">Attack</button>
       <button>Special</button>
       <button>Heal</button>
       <button>Die</button>
