@@ -30,12 +30,12 @@ section {
 .health-bar {
   width: 100%;
   height: 40px;
-  border: 1px solid #3b0000;
+  border: 1px solid #300101;
   border-radius: 50px;
 }
 
 .health-bar-value {
-  background-color: #bb0000;
+  background-color: #8b0000;
   width: 37%;
   height: 100%;
   border-radius: 15px;
@@ -88,4 +88,30 @@ button:active {
 
 button:disabled {
   background-color: #3b0000;
+}
+
+#log ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#log li {
+  margin: 0.5rem 0;
+}
+
+.log-player {
+  color: #fff;
+}
+
+.log-basilisk {
+  color: #ccc;
+}
+
+.log-damage {
+  color: #ff0000;
+}
+
+.log-heal {
+  color: #008000;
 }
