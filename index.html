@@ -6,7 +6,6 @@
   <link rel="icon" type="image/png" href="./images/billy.png">
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
-  <!-- <script src="https://unpkg.com/vue@next" defer></script> -->
   <script src="script.js" defer></script>
   <title>Basilisk</title>
 </head>
@@ -20,9 +19,7 @@
       <div class="health-bar">
         <div 
           class="health-bar-value"
-          :style="{
-            width: basiliskHealth + '%'
-          }"        
+          :style="basiliskBarStyles"        
         >
         </div>
       </div>
@@ -32,9 +29,7 @@
       <div class="health-bar">
         <div 
           class="health-bar-value"
-          :style="{
-            width: playerHealth + '%'
-          }" 
+          :style="playerBarStyles" 
         >     
         </div>
       </div>

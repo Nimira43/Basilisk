@@ -9,6 +9,14 @@ const app = Vue.createApp({
       basiliskHealth: 100
     }
   },
+  computed: {
+    basiliskBarStyles() {
+      return { width: this.basiliskHealth + '%'}
+    },
+    playerBarStyles() {
+      return { width: this.playerHealth + '%'}
+    }
+  },
   methods: {
     attackBasilisk() {
       const attackValue = getRandomValue(5, 12)
