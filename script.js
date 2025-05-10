@@ -2,11 +2,14 @@ function getRandomValue(min, max) {
   return Math.floor(Math.random() * (max - min)) + min
 }
 
+let currentRound = 0
+
 const app = Vue.createApp({
   data() {
     return {
       playerHealth: 100,
-      basiliskHealth: 100
+      basiliskHealth: 100,
+      currentRound: 0
     }
   },
   computed: {
