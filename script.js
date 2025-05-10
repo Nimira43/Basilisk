@@ -30,6 +30,7 @@ const app = Vue.createApp({
     specialAttackBasilisk() {
       const attackValue = getRandomValue(10, 25)
       this.basiliskHealth -= attackValue
+      this.attackPlayer()
     }
   }
 })
