@@ -24,7 +24,10 @@
     <section id="player" class="container">
       <h2>You</h2>
       <div class="health-bar">
-        <div class="health-bar-value" :style="playerBarStyles">     
+        <div 
+          class="health-bar-value" 
+          :style="playerBarStyles"
+        >     
         </div>
       </div>
     </section>
@@ -36,7 +39,11 @@
       >
         Special
       </button>
-      <button>Heal</button>
+      <button
+        @click="healPlayer"
+      >
+        Heal
+      </button>
       <button>Die</button>
     </section>
     <section id="log" class="container">
