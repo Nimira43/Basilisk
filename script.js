@@ -22,6 +22,7 @@ const app = Vue.createApp({
   },
   methods: {
     attackBasilisk() {
+      this.currentRound++
       const attackValue = getRandomValue(5, 12)
       this.basiliskHealth -= attackValue
       this.attackPlayer()
@@ -31,6 +32,7 @@ const app = Vue.createApp({
       this.playerHealth -= attackValue
     },
     specialAttackBasilisk() {
+      this.currentRound++
       const attackValue = getRandomValue(10, 25)
       this.basiliskHealth -= attackValue
       this.attackPlayer()
