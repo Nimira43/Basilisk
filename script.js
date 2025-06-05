@@ -25,16 +25,16 @@ const app = Vue.createApp({
   watch: {
     playerHealth(value) {
       if (value <= 0 && this.basiliskHealth <= 0) {
-
+        this.winner = 'draw'
       } else if (value <= 0) {
-
+        this.winner = 'basilisk'
       }
     },
     basiliskHealth(value) {
       if (value <= 0 && this.playerHealth <= 0) {
-
+        this.winner = 'draw'
       } else if (value <= 0) {
-        
+        this.winner = 'player'
       }
     }
   },
