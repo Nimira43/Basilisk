@@ -23,10 +23,18 @@ const app = Vue.createApp({
   },
   watch: {
     playerHealth(value) {
-    
+      if (value <= 0 && this.basiliskHealth <= 0) {
+
+      } else if (value <= 0) {
+
+      }
     },
     basiliskHealth(value) {
+      if (value <= 0 && this.playerHealth <= 0) {
 
+      } else if (value <= 0) {
+        
+      }
     }
   },
   methods: {
