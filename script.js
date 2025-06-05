@@ -7,7 +7,8 @@ const app = Vue.createApp({
     return {
       playerHealth: 100,
       basiliskHealth: 100,
-      currentRound: 0
+      currentRound: 0,
+      winner: null
     }
   },
   computed: {
