@@ -21,6 +21,14 @@ const app = Vue.createApp({
       return this.currentRound % 3 !== 0
     }
   },
+  watch: {
+    playerHealth(value) {
+    
+    },
+    basiliskHealth(value) {
+
+    }
+  }
   methods: {
     attackBasilisk() {
       this.currentRound++
