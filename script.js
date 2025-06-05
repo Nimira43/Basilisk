@@ -28,7 +28,7 @@ const app = Vue.createApp({
     basiliskHealth(value) {
 
     }
-  }
+  },
   methods: {
     attackBasilisk() {
       this.currentRound++
